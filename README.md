@@ -21,29 +21,31 @@ To answer the following questions, an ERD was created to see how various CSV's w
 ### Number of [titles] Retiring
 
 To get the number of employees retiring information, the following were needed:
--Employee number
--First and last name
--Title
--from_Date
--Salary
+- Employee number
+- First and last name
+- Title
+- from_Date
+- Salary
 
 A query was created to combine employees.csv and titles.csv  using <i>INNER JOIN</i> with the foreign key of employee number(emp_no), and employees.csv with salaries.csv with the foregin keys of emp_no.  This created a chart to include the above employee information into a table called "retiring_name."
 
+<img width=“500” alt=“” src="https://github.com/estherhk/Pewlett-Hackard-Analysis/blob/master/retiring_name.png">
+
 A <i> COUNT</i> query was completed to count the different "titles" from "retiring_name" in descending order.  The table shows that "engineer" has the highest count of 115,003 current employees to retire in the future, and "manager" has the lowest of count of 24.  
 
-SCREENSHOT
+<img width=“500” alt=“” src="https://github.com/estherhk/Pewlett-Hackard-Analysis/blob/master/title_count.png">
 
 ### Mentor List
 
 Another table was created to find possible mentors with a birth date between January 1, 1965 and Decebmer 31, 1965.  These employees are currently employed at Pewlett Hackard.  This table includes the following information:
--Employee Number
--First and last name
--Title
--from_date and to_date
+- Employee Number
+- First and last name
+- Title
+- from_date and to_date
 
 A query was created to combine employees.csv and titles.csv using <i> INNER JOIN </i> with the foreign keys of emp_no.  To project employees with the birthdate between January 1,1965 and December 31, 1965, a <i> WHERE </i> statement is used.  Also, an <i> AND </i> is written for employees with a "to_date" greater than the current date.  This will exclude all employees that do not meet thre requirements of what Pewlett Hackard is looking for in a mentor.
 
-SCREENSHOT
+<img width=“500” alt=“” src="https://github.com/estherhk/Pewlett-Hackard-Analysis/blob/master/retiring_name.png">
 
 ## Challenge Summary
 
