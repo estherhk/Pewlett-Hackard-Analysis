@@ -43,7 +43,7 @@ Another table was created to find possible mentors with a birth date between Jan
 - Title
 - from_date and to_date
 
-A query was created to combine employees.csv and titles.csv using <i> INNER JOIN </i> with the foreign keys of emp_no.  To project employees with the birthdate between January 1,1965 and December 31, 1965, a <i> WHERE </i> statement is used.  Also, an <i> AND </i> is written for employees with a "to_date" greater than the current date.  This will exclude all employees that do not meet thre requirements of what Pewlett Hackard is looking for in a mentor.
+A query was created to combine employees.csv and titles.csv using <i> INNER JOIN </i> with the foreign keys of emp_no.  To project employees with the birthdate between January 1,1965 and December 31, 1965, a <i> WHERE </i> statement is used.  Also, an <i> AND </i> is written for employees with a "to_date" greater than the current date.  This will exclude all employees that do not meet the requirements of what Pewlett Hackard is looking for in a mentor.  There are currently 1,549 employees available for the mentorship program.
 
 <img width=“500” alt=“” src="https://github.com/estherhk/Pewlett-Hackard-Analysis/blob/master/retiring_name.png">
 
